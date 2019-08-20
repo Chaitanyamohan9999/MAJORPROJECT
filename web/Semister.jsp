@@ -9,7 +9,7 @@ String year = request.getQueryString();
                 String subdomain1=(String)session.getAttribute("subdomain");
                 String branch=(String)session.getAttribute("branch");
                 
-         String[] br_y = {"1","2"}; 
+         String[] br_y = {"1","2","3","4"}; 
         
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
