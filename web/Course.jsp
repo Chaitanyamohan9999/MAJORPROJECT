@@ -112,8 +112,7 @@ window.location="./Regulation.jsp?"+c;
 <td width="163" height="46" class="paragraping"><font size="3">Choose Course</font></td>
 <td width="191" class="fielditem"><select name="domain" onChange="fu()">
 		<option value="--Select category--">---Select Course Name--</option>
-		<option value="B.Tech">B.Tech</option>
-                <option value="M.Tech">M.Tech</option>
+		<option value="PG-D">PG-D</option>
     </select></td>
 </tr> 
 <tr>
