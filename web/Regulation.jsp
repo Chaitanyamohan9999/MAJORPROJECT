@@ -115,10 +115,8 @@ window.location="./Branch.jsp?"+d;
 <td width="172" class="name"><select type="text"  name="subdomain" onChange="fu()">
 <option>-----Select Regulation----</option>
         
-		<option value="GR11">GR11</option>
-                <option value="GR13">GR13</option>
-        
-		</select></td>
+<option value="GR11">GR11</option>
+        		</select></td>
 </tr>
 <tr>
             <td width="101" height="46" class="paragraping"><font size="3">Branch</font></td>
