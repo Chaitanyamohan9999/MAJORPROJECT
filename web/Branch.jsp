@@ -3,7 +3,7 @@
   String subdomain1 = request.getQueryString();
 	session.setAttribute("subdomain",subdomain1);	
         String domain=(String)session.getAttribute("domain");
-	String[] br_b = {"CSE","ECE","EEE","PMT","MAD"}; 
+	String[] br_b = {"PMT","MAD"}; 
 		String[] br_m = {"MBA","MCA"};
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -119,7 +119,7 @@ window.location="./Year.jsp?"+e;
 <option>--------Select Title-------</option>
 
 				<%
-                               if(domain.equals("B.Tech"))
+                               if(domain.equals("PG-D"))
 		{
 			for(int i=0;i<br_b.length;i++){
                             %><option value="<%=br_b[i]%>"><%=br_b[i]%></option><%
