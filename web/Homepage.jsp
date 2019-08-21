@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
@@ -86,22 +87,26 @@ background: url(right.gif) no-repeat 97% 50%;
        <legend><font color="#000099" size="4"><strong>Login</strong></font></legend>
 
 		  <table width="366" align="center">
-<form method="post" name="form">
+<form method="post" name="form" action="${pageContext.request.contextPath}/log.jsp">
+
 
 <tr>
-<td width="163" height="46" class="paragraping"><font size="3">Enter Name</font></td>
-<td width="191" class="fielditem"><input type="text" name="User">         </td>
+<td width="163" height="46" class="paragraping"><font size="3">User Name</font></td>
+<td width="191" class="fielditem"><input type="text" name="uname" value="">         </td>
 </tr> 
 <tr>
             <td width="101" height="46" class="paragraping"><font size="3">Password</font></td>
-<td width="172" class="name"> <input type="password" name="pword"</td>
+<td width="172" class="name"> <input type="password" name="password"</td>
 </tr>
 <tr>
             <td width="101" height="46" class="paragraping"><font size="3"></font></td>
-<td width="172" class="name"> <input type="submit">
-<input type="reset"</td>
+<td width="172" class="name"> <input type="submit" value="Login">
+<input type="reset" value="Reset"></td>
 </tr>
 <tr>
+<td colspan="2"><a href="reg.jsp">Register Here</a></td>
+                    </tr>
+
 </form>
 
                       
