@@ -36,7 +36,7 @@ System.out.println("oldaaaaaaaaa   "+subject);
 String resultx = subject.replaceAll(" ","");
 System.out.println("newaaaaaaa   "+subject);
 XWPFDocument doc = new XWPFDocument();
-		FileOutputStream out1  = new FileOutputStream("QuestionPaper.doc");
+		FileOutputStream out1  = new FileOutputStream("D:\\QuestionPaper.doc");
         	
         	XWPFParagraph para = doc.createParagraph();
         	para.setAlignment(ParagraphAlignment.CENTER);
@@ -137,7 +137,7 @@ XWPFDocument doc = new XWPFDocument();
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			c = DriverManager.getConnection("jdbc:mysql://localhost/gr11?serverTimezone=EST5EDT","root","Mysql@123");
+			c = DriverManager.getConnection("jdbc:mysql://localhost/gr11","root","root");
 		    st = c.createStatement();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -184,15 +184,7 @@ XWPFDocument doc = new XWPFDocument();
 		table.getRow(8).getCell(1).setText(quest[12]);
 		table.getRow(9).getCell(1).setText(quest[13]);
 		table.getRow(13).getCell(1).setText(quest[14]);
-		 out.print("<ol>");
-                for(i=0; i<quest.length; i++){
-                   out.print("<li>");
-                    out.println(quest[i]);
-                  out.print("</li>");
-                   
-                }
-                  out.print("</ol>");
-               
+		
 		doc.write(out1);   
-                //response.sendRedirect("Course.jsp?msg=success");                           
+                response.sendRedirect("Course.jsp?msg=success");                           
       %>
